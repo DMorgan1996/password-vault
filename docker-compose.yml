@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: password-vault-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: password_vault
+      POSTGRES_USER: password_vault_user
+      POSTGRES_PASSWORD: local_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - password_vault_data:/var/lib/postgresql/data
+
+volumes:
+  password_vault_data:
