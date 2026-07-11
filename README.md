@@ -22,3 +22,9 @@ A full-stack password manager built with Spring Boot, React and PostgreSQL.
 ## Project Purpose
 
 Password Vault is a Spring Boot application for securely storing and managing user credentials.
+
+## Current Features
+
+- Store credentials
+- Retrieve credentials belonging to a user
+- Persist data using Spring Data JPA
